@@ -2,7 +2,6 @@ pub mod rock_paper_scissors;
 
 use std::marker::PhantomData;
 
-#[derive(Debug)]
 pub struct FiniteStateMachine<I, O, S, F, G> {
     _inputs: PhantomData<I>,
     _outputs: PhantomData<O>,
