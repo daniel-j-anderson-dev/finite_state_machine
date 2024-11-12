@@ -10,14 +10,14 @@ pub fn new_finite_state_machine() -> FiniteStateMachine<
     FiniteStateMachine::new(next_state, output)
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy)]
 pub enum Input {
     Rock,
     Paper,
     Scissors,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy)]
 pub enum Output {
     GameNotOver,
     Player1Wins,
@@ -25,7 +25,7 @@ pub enum Output {
     Tie,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+#[derive(Debug, Clone, Copy, Default)]
 pub enum State {
     #[default]
     Player1Turn,
